@@ -1,0 +1,25 @@
+{
+  "departamentos": [
+    ["Antioquia", 4],
+    ["Atlántico", 1],
+    ["Bogotá", 10],
+    ["Bolívar", 1],
+    ["Boyaca", 0],
+    ["Caldas", 1],
+    ["Cauca", 0],
+    ["Cesar", 0],
+    ["Cundinamarca", 1],
+    ["Huila", 1],
+    ["Magdalena", 0],
+    ["Meta", 1],
+    ["Nariño", 1],
+    ["Norte de Santander", 1],
+    ["Quindío", 1],
+    ["Risaralda", 0],
+    ["Santander", 1],
+    ["Tolima", 0],
+    ["Valle del Cauca", 2],
+    ["Casanare", 0],
+    ["San Andrés", 0]
+  ]
+}

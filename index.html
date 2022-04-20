@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taller HTML - CSS</title>
+  <script defer src="./public/index.js"></script>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>
+      Taller HTML - CSS Ingreso de datos covid-19
+    </h1>
+    <div>
+      <a class="button" href="reporte.html">
+        Ver reportes
+      </a>
+    </div>
+    <form id="form">
+      <h2>Fecha de registro actual</h2>
+      <div class="input_fecha">
+        <div class="input">
+          <label for="fecha">Fecha de registro</label>
+          <input required readonly type="date" name="fecha" id="fecha" title="Fecha actual">
+        </div>
+      </div>
+      <h2>Seleccione el departamento del reporte</h2>
+      <div class="input_ubicacion">
+        <div class="input">
+          <label for="ubicacion">Ubicación</label>
+          <select required onfocus="this.size=10" onblur="this.size=1" onchange="this.size=1; this.blur()"
+            id="ubicacion" name="ubicacion" title="Ubicacion de reporte">
+          </select>
+        </div>
+      </div>
+      <h2>Ingrese la cantidad de reportes por genero</h2>
+      <div class="input_genero">
+        <div class="input">
+          <label for="hombre">Hombres</label>
+          <input required type="number" name="hombre" id="hombre" title="Hombres">
+        </div>
+        <div class="input">
+          <label for="mujer">Mujeres</label>
+          <input required type="number" name="mujer" id="mujer" title="Mujeres">
+        </div>
+      </div>
+      <h2>Ingrese la catidad de reportes en base a la edad</h2>
+      <div class="input_edad">
+        <div class="input">
+          <label for="menor49">Menores de 49 años</label>
+          <input required type="number" name="menor49" id="menor49" title="Menores de 49 años" min="0" max="120">
+        </div>
+        <div class="input">
+          <label for="mayor50">Mayores de 50 años</label>
+          <input required type="number" name="mayor50" id="mayor50" title="Mayores de 50 años" min="0" max="120">
+        </div>
+      </div>
+      <h2>Ingrese la cantidad de reportes en base a la causa de contagio</h2>
+      <div class="input_causa">
+        <div class="input">
+          <label for="importado">Importado</label>
+          <input required type="number" name="importado" id="importado" title="Importados">
+        </div>
+        <div class="input">
+          <label for="relacionado">Relacionado</label>
+          <input required requiredtype="number" name="relacionado" id="relacionado" title="Relacionados">
+        </div>
+        <div class="input">
+          <label for="en_estudio">En estudio</label>
+          <input required type="number" name="en_estudio" id="en_estudio" title="En estudio">
+        </div>
+      </div>
+      <h2>Ingrese la cantidad de reportes en base al manejo de pacientes</h2>
+      <div class="input_manejo">
+        <div class="input">
+          <label for="casa">Casa</label>
+          <input required type="number" name="casa" id="casa" title="Casa">
+        </div>
+        <div class="input">
+          <label for="hostital">Hostital</label>
+          <input required type="number" name="hostital" id="hostital" title="Hostital">
+        </div>
+        <div class="input">
+          <label for="uci">Unidad de cuidados intensivos</label>
+          <input required type="number" name="uci" id="uci" title="Unidad de cuidados intensivos">
+        </div>
+      </div>
+      <h2>Ingrese la cantidad de personas que murieron y los que se recuperaron este día </h2>
+      <div class="input_extra">
+        <div class="input">
+          <label for="decesos">Decesos</label>
+          <input required type="number" name="decesos" id="decesos" title="Decesos">
+        </div>
+        <div class="input">
+          <label for="recuperados">Recuperados</label>
+          <input required type="number" name="recuperados" id="recuperados" title="Recuperados">
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="button" type="submit" id="btn_guardar">Enviar informacion</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

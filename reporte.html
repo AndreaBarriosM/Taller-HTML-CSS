@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reportes</title>
+  <script defer src="./public/reporte.js"></script>
+  <link rel="stylesheet" href="./reporte.css">
+</head>
+
+<body>
+  <div class="contenedor">
+    <a class="button" href="index.html">
+      Volver a inicio
+    </a>
+    <div class="table">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="24">Cifras Covid-19 Colombia</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="2" rowspan="2">Variables</td>
+            <td class="vertical_write" rowspan="2">Laboratorios</td>
+            <td colspan="20">Fecha</td>
+            <td rowspan="2">Totales</td>
+          </tr>
+
+          <tr>
+            <td class="vertical_write">19-2-2022</td>
+            <td class="vertical_write">20-2-2022</td>
+            <td class="vertical_write">21-2-2022</td>
+            <td class="vertical_write">22-0-2022</td>
+            <td class="vertical_write">23-2-2022</td>
+            <td class="vertical_write">24-2-2022</td>
+            <td class="vertical_write">25-2-2022</td>
+            <td class="vertical_write">26-2-2022</td>
+            <td class="vertical_write">27-2-2022</td>
+            <td class="vertical_write">28-2-2022</td>
+            <td class="vertical_write">01-3-2022</td>
+            <td class="vertical_write">02-3-2022</td>
+            <td class="vertical_write">03-3-2022</td>
+            <td class="vertical_write">04-3-2022</td>
+            <td class="vertical_write">05-3-2022</td>
+            <td class="vertical_write">06-3-2022</td>
+            <td class="vertical_write">07-3-2022</td>
+            <td class="vertical_write">08-3-2022</td>
+            <td class="vertical_write">09-3-2022</td>
+            <td class="vertical_write">10-3-2022</td>
+          </tr>
+        <tbody id="departamentos">
+          <td rowspan="22">Ubicación</td>
+        </tbody>
+        <tr id="total_dia">
+          <td colspan="3">Total casos día</td>
+        </tr>
+        <tbody id="genero">
+          <td rowspan="3">Genero</td>
+          <tr class="hombre">
+            <td colspan="2">Hombre</td>
+          </tr>
+          <tr class="mujer">
+            <td colspan="2">Mujer</td>
+          </tr>
+        </tbody>
+        <tbody id="edad">
+          <td rowspan="3">Edad</td>
+          <tr class="menor49">
+            <td colspan="2">Menor de 49 años</td>
+          </tr>
+          <tr class="mayor50">
+            <td colspan="2">Mayor de 50 años</td>
+          </tr>
+        </tbody>
+        <tbody id="causa">
+          <td rowspan="4">Causa</td>
+          <tr class="importado">
+            <td colspan="2">importado (viaje)</td>
+          </tr>
+          <tr class="relacionado">
+            <td colspan="2">Relacionado</td>
+          </tr>
+          <tr class="enestudio">
+            <td colspan="2">En estudio</td>
+          </tr>
+        </tbody>
+        <tbody id="manejo">
+          <td rowspan="4">Manejo</td>
+          <tr class="casa">
+            <td colspan="2">Casa</td>
+          </tr>
+          <tr class="hostital">
+            <td colspan="2">Hostital</td>
+          </tr>
+          <tr class="uci">
+            <td colspan="2">UCI</td>
+          </tr>
+        </tbody>
+        <tr class="recuperados">
+          <td colspan="3">Recuperados - dia reporte</td>
+        </tr>
+        <tr class="fallecidos">
+          <td colspan="3">Descesos</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

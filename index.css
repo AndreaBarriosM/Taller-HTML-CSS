@@ -1,0 +1,86 @@
+body{
+  background-color: #ccc;
+}
+.contenedor {
+  padding: 20px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+h2, h1 {
+  font-size: medium;
+  text-align: center;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;  
+}
+
+input, select{
+  border-radius: 10px;
+}
+
+.input_fecha,
+.input_ubicacion,
+.input_genero,
+.input_edad,
+.input_causa,
+.input_manejo,
+.input_extra {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;  
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: rgb(62, 67, 66);
+  color: white;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px 1px;
+  background-color: rgb(62, 67, 66);
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px 1px;
+  background-color: aqua;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a.button {
+  background-color: rgb(120, 184, 74);
+  display: inline-block;
+}
+
+@media screen and (min-width: 600px) {
+  h1{
+    font-size: 30px;
+  }
+  h2 {
+    font-size: large;
+  }
+  .input_genero,
+  .input_edad {
+    flex-direction: row;
+  }
+}
